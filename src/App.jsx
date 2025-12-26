@@ -5,39 +5,13 @@ import AddTask from './components/AddTask'
 import Hero from './components/Hero'
 
 const App = () => {
-  const tasksList = [
-  {
-    uniqueId: 1,
-    taskContent: "Learn React useState and props",
-    isCompleted: false
-  },
-  {
-    uniqueId: 2,
-    taskContent: "Build a simple todo app UI",
-    isCompleted: false
-  },
-  {
-    uniqueId: 3,
-    taskContent: "Practice JavaScript array methods",
-    isCompleted: false
-  },
-  {
-    uniqueId: 4,
-    taskContent: "Push project code to GitHub",
-    isCompleted: false
-  },
-  {
-    uniqueId: 5,
-    taskContent: "Revise conditional rendering in React",
-    isCompleted: false
-  }
-];
+
 
 
 const [navState,setNavState] = useState("All")
 
 
-const [tasks, setTasks] = useState(tasksList)
+const [tasks, setTasks] = useState([])
 
 
 function toggleCompletedfunc(Id){
